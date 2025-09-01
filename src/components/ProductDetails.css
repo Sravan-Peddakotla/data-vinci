@@ -1,0 +1,122 @@
+.product-details {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+  padding: 20px;
+}
+
+/* Rewards */
+.rewards {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.color-icon {
+  font-size: 20px;
+}
+.reward-badge {
+  background: #f7b500;
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin: 0 5px;
+}
+.rewards a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+/* Delivery */
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.delivery .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+/* Afterpay */
+.afterpay {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.afterpay-icon {
+  background: #00b75a;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.info-icon {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* UMF Scale */
+.umf .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.umf-scale {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.umf-scale .highlight {
+  color: magenta;
+  font-weight: bold;
+}
+.umf-bar {
+  display: flex;
+  height: 5px;
+  margin-bottom: 20px;
+}
+.umf-bar .color {
+  flex: 1;
+}
+.umf-bar .red { background: red; }
+.umf-bar .orange { background: orange; }
+.umf-bar .pink { background: magenta; }
+.umf-bar .green { background: green; }
+.umf-bar .blue { background: blue; }
+.umf-bar .purple { background: purple; }
+
+/* Taste Profile */
+.taste .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.taste-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.taste-bar input[type="range"] {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .delivery {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .umf-scale {
+    flex-wrap: wrap;
+  }
+  .taste-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
